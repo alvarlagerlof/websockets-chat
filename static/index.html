@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Shut app</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="app">
+            <ul id="messages">
+                <li v-for="item in messages">
+                    <div v-bind:class="{ right: item.own }">
+                        <div class="card" >
+                            {{ item.name }}
+                            {{ item.message }}
+                            {{ item.timestamp }}
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+            
+    
+            <form v-on:keyup.enter="onEnterClick" @submit.stop.prevent="prevent">
+                <input v-model="input" class="card" type="text" placeholder="Type a message"/>
+                <input type="submit" class="card" value="Send"></input>
+            </form>
+        </div>
+
+       
+       
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

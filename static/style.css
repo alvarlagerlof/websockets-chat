@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Kollektif";
+}
+
+
+ul {
+    margin-bottom: 100px;
+}
+
+
+ul li {
+    margin-top: 45px;
+}
+
+ul li .card {
+    display: inline;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+form {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin-right: 40px;
+    background: linear-gradient(to top, white 70%, rgba(255,255,255,0.7) 90%, rgba(255,255,255,0.0));
+}
+
+input[type="text"] {
+    outline: none;
+    width: calc(100vw - 130px);
+}
+
+input[type="submit"] {
+    outline: none;
+    background: blue;
+    border: 2px solid blue;
+    color: white;
+    margin-left: 0px;
+}
+
