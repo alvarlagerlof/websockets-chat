@@ -1,4 +1,4 @@
-# 💬 Socket chat
+# 💬 WebSocket chat
 A simple Node.js chat client and server using sockets
 
 ## Installation
